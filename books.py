@@ -1,4 +1,3 @@
-#! usr/bin/python
 
 def a(lst, target, with_replacement=False):
     def _a(idx, l, r, t, w):
@@ -10,8 +9,8 @@ def a(lst, target, with_replacement=False):
     return _a(0, [], [], target, with_replacement)
 
 
-def main(mylist, mysum):
-  # check sum is gettable first by calling once without repeating same item once
+def get_best_combo(mylist, mysum):
+      # check sum is gettable first by calling once without repeating same item once
   res = a(mylist, mysum)
   if len(res) > 0:
     return res
@@ -35,11 +34,3 @@ def main(mylist, mysum):
       return res2
 
 
-if __name__ == '__main__':
-  # To test above function
-  boxes = [6,9]
-  W = 15
-  result = main(boxes, W)
-  print result, "\n"
-  for i in result:
-    print i, "*********", sum(i)
