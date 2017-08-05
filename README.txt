@@ -3,9 +3,8 @@ This application uses Python 2.7.12 version.
 You can download it from official Python Website:
 https://www.python.org/downloads/
 
-Please access the application using command line.
-
-After installing Python in your system, run the application using:
+After installing Python in your system, run the application by typing
+this on your command line:
 
 python main.py
 
