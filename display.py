@@ -31,6 +31,10 @@ def display():
 
             subject = raw_input('Enter the subject:\n')
 
+            if not any(d['Subject'] == subject for d in book_list):
+                print "Either your input is wrong or no books available for this subject."
+                return
+
             cust_input = \
                 raw_input('Enter the number of books the customer wants:\n')
 
